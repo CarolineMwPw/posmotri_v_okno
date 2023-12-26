@@ -16,6 +16,9 @@ html {
   font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   background-color: #1b1919;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 h1,
@@ -48,15 +51,16 @@ ol {
 }
 
 .content {
-  margin: auto;
+  margin: 0 auto 0;
   display: flex;
   flex-direction: row;
   width: 1140px;
-  min-height: 534px;
-  padding: 133px 30px;
-  justify-content: center;
-  align-items: flex-end;
+  /* min-height: 534px;
+  padding: 133px 30px; */
+  /* justify-content: center;
+  align-items: flex-end; */
   gap: 30px;
+  /* box-sizing: content-box; */
 }
 
 .result {
@@ -79,6 +83,7 @@ ol {
   font-weight: 700;
   line-height: normal;
   cursor: pointer;
+  box-sizing: content-box;
 }
 
 button:focus {
@@ -110,7 +115,7 @@ button:focus {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  gap: 40px;
+  /* gap: 40px; */
   align-items: flex-start;
 }
 
@@ -120,7 +125,7 @@ button:focus {
   background-color: transparent;
   text-align: left;
   border: none;
-
+  padding: 2.5px 0 2.5px;
   min-width: 225px;
   font-family: Fira Sans Condensed;
   font-size: 18px;
@@ -205,7 +210,7 @@ button:focus {
 }
 
 .search-form__fieldset-title + .search-form__label {
-  padding: 2.5px 0 2.5px;
+  /* padding: 2.5px 0 2.5px; */
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
 }
